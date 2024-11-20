@@ -9,12 +9,7 @@ This project is an Android application for trip planning. It allows users to cre
 * User registration and login
 * Trip creation and management
 * Destination addition and editing
-* Trip progress tracking
-* (Add more features as needed)
-
-## Screenshots
-
-(Include screenshots of your app here)
+* Timeline View approach in the list
 
 ## Getting Started
 
@@ -27,7 +22,7 @@ This project is an Android application for trip planning. It allows users to cre
 * Koin, Room, Firebase FireStore and Navigation Component
 
 ## Contributing
-Private Repository don't use if you get.
+Private Repository don't use for personal engagments.
 
 ## License
 
