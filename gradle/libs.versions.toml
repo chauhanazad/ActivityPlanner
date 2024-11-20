@@ -1,0 +1,51 @@
+[versions]
+agp = "8.7.1"
+kotlin = "1.9.24"
+coreKtx = "1.15.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.9.3"
+constraintlayout = "2.2.0"
+navigationFragmentKtx = "2.8.4"
+navigationUiKtx = "2.8.4"
+firebaseAuthKtx = "23.1.0"
+firebaseBom ="33.6.0"
+firestore="24.6.1"
+googlegms="4.4.2"
+roomKtx = "2.6.1"
+roomcompiler="2.5.0"
+firebaseFirestoreKtx = "25.1.1"
+koin = "3.2.0"
+ksp = "1.9.21-1.0.15"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
+androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
+firebase-auth-ktx = { group = "com.google.firebase", name = "firebase-auth-ktx", version.ref = "firebaseAuthKtx" }
+firebase-bom = { group = "com.google.firebase", name ="firebase-bom", version.ref = "firebaseBom" }
+firebase-analytics ={ group = "com.google.firebase", name="firebase-analytics" }
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomKtx" }
+androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "roomKtx" }
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomcompiler" }
+firebase-firestore-ktx = { group = "com.google.firebase", name = "firebase-firestore-ktx", version.ref = "firebaseFirestoreKtx" }
+koin-core = { group = "org.koin", name = "koin-core", version.ref = "koin" }
+koin-android = { group = "org.koin", name = "koin-android", version.ref = "koin" }
+koin-viewmodel = { group = "org.koin", name = "koin-androidx-veiwmodel", version.ref = "koin" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+google-gms-service = { id = "com.google.gms.google-services", version.ref="googlegms"}
+ksp = { id = "com.google.devtools.ksp", version.ref="ksp"}
+

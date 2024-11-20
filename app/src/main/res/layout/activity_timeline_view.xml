@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:id="@+id/root"
+    tools:context=".ui.home.adapter.ActivityTimelineAdapter">
+
+    <!-- Timeline Line -->
+    <View
+        android:id="@+id/timelineLine"
+        android:layout_width="3dp"
+        android:layout_height="100dp"
+        android:background="@color/black"
+        app:layout_constraintStart_toStartOf="@id/timelineDot"
+        app:layout_constraintTop_toBottomOf="@id/timelineDot"
+        app:layout_constraintEnd_toEndOf="@id/timelineDot" />
+
+    <!-- Activity Circle -->
+    <View
+        android:id="@+id/timelineDot"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:background="@color/red"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Activity Name -->
+    <TextView
+        android:id="@+id/activityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_name"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toEndOf="@id/timelineDot"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp" />
+
+    <!-- Activity Location -->
+    <TextView
+        android:id="@+id/activityLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/location"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintStart_toEndOf="@id/timelineDot"
+        app:layout_constraintTop_toBottomOf="@id/activityName"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp" />
+
+    <!-- Activity Time and Duration -->
+    <TextView
+        android:id="@+id/activityTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_time_duration"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintStart_toEndOf="@id/timelineDot"
+        app:layout_constraintTop_toBottomOf="@id/activityLocation"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp" />
+
+    <ImageView
+        android:id="@+id/deleteActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_close_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
